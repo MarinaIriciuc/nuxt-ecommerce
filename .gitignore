@@ -19,5 +19,6 @@ logs
 
 # Local env files
 .env.local
+.env
 .env.*
 !.env.example
