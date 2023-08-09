@@ -2,8 +2,12 @@
 definePageMeta({
   middleware: ['auth']
 })
-
 const route = useRoute()
+
+useHead({
+  title: route.params.category
+})
+
 
 const {data: products} = await useFetch(`/api/${route.params.category}/products`);
 const {data: categories} = await useFetch('/api/categories');

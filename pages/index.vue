@@ -2,7 +2,9 @@
 definePageMeta({
   middleware: ['auth']
 })
-
+useHead({
+  title: "Ecommerce"
+})
 
 </script>
 

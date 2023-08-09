@@ -3,7 +3,9 @@ definePageMeta({
   layout: false,
   middleware: ['auth']
 })
-
+useHead({
+  title: "Cart"
+})
 const {data, refresh: refreshCart} = await useFetch('/api/cart')
 
 

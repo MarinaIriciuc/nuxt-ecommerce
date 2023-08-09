@@ -2,6 +2,9 @@
 definePageMeta({
   middleware: ['guest']
 })
+useHead({
+  title: "Login"
+})
 
 const {signIn, signOut, getSession} = useAuth()
 const session = await getSession();

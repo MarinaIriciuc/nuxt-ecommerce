@@ -3,6 +3,9 @@ definePageMeta({
   layout: false,
   middleware: ['auth']
 })
+useHead({
+  title: "My account"
+})
 
 const {getSession} = useAuth();
 const session = await getSession();

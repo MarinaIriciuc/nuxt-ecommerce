@@ -5,6 +5,9 @@ definePageMeta({
   layout: false,
   middleware: ['auth']
 })
+useHead({
+  title: "Add product"
+})
 
 const {data: categories} = await useFetch('/api/categories')
 let errors = ref({})

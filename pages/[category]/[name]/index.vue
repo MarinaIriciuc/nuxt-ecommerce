@@ -4,8 +4,14 @@ import Swal from "sweetalert2";
 definePageMeta({
   middleware: ['auth']
 })
-
 const route = useRoute();
+
+useHead({
+  title: route.params.category
+})
+
+
+
 const {data: product} = await useFetch(`/api/products/${route.params.name}`)
 let quantity = ref(1)
 

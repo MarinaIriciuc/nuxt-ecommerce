@@ -5,6 +5,9 @@ definePageMeta({
   layout: false,
   middleware: ['auth']
 });
+useHead({
+  title: "Dashboard"
+})
 
 const {getSession} = useAuth()
 const {user} = await getSession();
