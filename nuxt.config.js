@@ -9,4 +9,7 @@ export default defineNuxtConfig({
             ]
         }
     },
+    runtimeConfig: {
+        AUTH_SECRET: process.env.AUTH_SECRET
+    }
 })

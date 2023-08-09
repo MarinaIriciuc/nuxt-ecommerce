@@ -3,7 +3,7 @@ import Swal from "sweetalert2";
 
 definePageMeta({
   layout: false,
-  middleware: ['auth']
+  middleware: ['logged']
 });
 useHead({
   title: "Dashboard"

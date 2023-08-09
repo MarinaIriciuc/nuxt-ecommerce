@@ -1,7 +1,7 @@
 <script setup>
 defineProps(['error'])
 definePageMeta({
-  middleware: ['auth']
+  middleware: ['logged']
 })
 </script>
 

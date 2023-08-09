@@ -17,8 +17,9 @@ logs
 .fleet
 .idea
 
+# Migrations
+prisma/migrations/
+
 # Local env files
-.env.local
 .env
-.env.*
 !.env.example

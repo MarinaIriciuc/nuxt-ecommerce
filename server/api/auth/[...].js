@@ -3,9 +3,11 @@ import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import {PrismaAdapter} from "@auth/prisma-adapter";
 import prisma from "~/server/data/prisma";
-import CredentialsProvider from "next-auth/providers/credentials";
 
 const prismaAdapter = PrismaAdapter(prisma)
+
+const runtimeConfig = useRuntimeConfig()
+
 export default NuxtAuthHandler({
     providers: [
         // @ts-expect-error You need to use .default here for it to work during SSR. May be fixed via Vite at some point
@@ -36,6 +38,7 @@ export default NuxtAuthHandler({
         // })
 
     ],
+    secret: runtimeConfig.AUTH_SECRET,
     adapter: prismaAdapter,
     pages: {
         signIn: '/login'

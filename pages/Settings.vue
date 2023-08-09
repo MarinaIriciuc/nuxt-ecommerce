@@ -1,7 +1,7 @@
 <script setup>
 definePageMeta({
   layout: false,
-  middleware: ['auth']
+  middleware: ['logged']
 })
 useHead({
   title: "My account"
