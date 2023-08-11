@@ -1,63 +1,84 @@
-# Nuxt 3 Minimal Starter
+# E-Commerce Website with Nuxt.js, Bootstrap, and Authentication
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is an e-commerce website built using Nuxt.js and Bootstrap. The project allows users to browse and add products to
+their shopping cart. It also includes authentication options through Google and GitHub. The design follows a minimalist
+approach for a clean and intuitive user experience.
 
-## Setup
+![Website Screenshot](https://i.ibb.co/dBKTnw8/Captura-de-ecran-din-2023-08-11-la-15-12-44.png)
+![Website Screenshot](https://i.ibb.co/r3c0g7f/Captura-de-ecran-din-2023-08-11-la-15-06-18.png)
+![Website Screenshot](https://i.ibb.co/rxgjR3f/Captura-de-ecran-din-2023-08-11-la-15-15-14.png)
+![Website Screenshot](https://i.ibb.co/6HNmW4V/Captura-de-ecran-din-2023-08-11-la-15-22-33.png)
 
-Make sure to install the dependencies:
+## Features
 
-```bash
-# npm
-npm install
+- Browse and view products from the product catalog.
+- Add products to the shopping cart.
+- Authenticate using Google or GitHub accounts.
+- Minimalist design for a modern and user-friendly interface.
+- Administrator Features:
+    - Add, display, and delete products from the database.
 
-# pnpm
-pnpm install
+## Technologies Used
 
-# yarn
-yarn install
-```
+- Nuxt.js (https://nuxtjs.org) : A Vue.js framework for building server-side rendered applications.
+- Bootstrap (https://getbootstrap.com) : A popular CSS framework for building responsive and sleek designs.
+- MySQL (https://www.mysql.com) : A relational database management system for storing product data.
+- OAuth: For authentication through Google and GitHub accounts.
 
-## Development Server
+## Getting Started
 
-Start the development server on `http://localhost:3000`:
+### Prerequisites
 
-```bash
-# npm
-npm run dev
+- [Node.js](https://nodejs.org) and npm: Make sure you have Node.js and npm (Node Package Manager) installed on your
+  system.
 
-# pnpm
-pnpm run dev
+### Installation
 
-# yarn
-yarn dev
-```
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/e-commerce-nuxt-bootstrap-auth.git
+   cd e-commerce-nuxt-bootstrap-auth
+   
+2. Install the dependencies:
+    ```bash
+    npm install
+   
+3. Set up the required environment variables in .env.example file in the root directory:
+    ```bash
+    AUTH_SECRET=your-auth-secret
+   DATABASE_URL=your-database-url
+   DATABASE_RELATION_MODE=your-database-relation-mode
+   GITHUB_CLIENT_ID=your-github-client-id
+   GITHUB_CLIENT_SECRET=your-github-client-secret
+   GOOGLE_CLIENT_ID=your-google-client-id
+   GOOGLE_CLIENT_SECRET=your-google-client-secret
 
-## Production
+   Replace your-auth-secret, your-database-url, your-database-relation-mode, your-github-client-id, your-github-client-secret, your-google-client-id, and your-google-client-secret with the actual values. These values are usually provided by the authentication providers and your database configuration.
 
-Build the application for production:
+4. Run the development server:
+    ```bash
+   npm run dev
+5. Open your browser and go to http://localhost:3000 to access the website.
 
-```bash
-# npm
-npm run build
+### Usage
 
-# pnpm
-pnpm run build
+Once you have completed the installation steps, you can start using the e-commerce website:
 
-# yarn
-yarn build
-```
+1. Open your browser and navigate to `http://localhost:3000`.
 
-Locally preview production build:
+2. Browse the product catalog and click on products to view more details.
 
-```bash
-# npm
-npm run preview
+3. To add products to your shopping cart, simply click the "Add to Cart" button on the product page.
 
-# pnpm
-pnpm run preview
+4. If you want to authenticate using Google or GitHub, locate the corresponding authentication buttons and follow the
+   prompts.
 
-# yarn
-yarn preview
-```
+5. Enjoy exploring the e-commerce website and testing its features!
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Contributing
+
+Contributions are welcome! If you find any issues, discover bugs, or have suggestions for improvements, feel free to
+open a GitHub issue or submit a pull request. Make sure to follow the [contributing guidelines](CONTRIBUTING.md) when
+submitting your contributions.
+
+**[Iriciuc Marina](https://github.com/MarinaIriciuc)**
