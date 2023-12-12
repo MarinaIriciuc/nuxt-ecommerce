@@ -7,7 +7,7 @@ export const ProductSchema = z.object({
     slug: z.string()
         .regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),
     description: z.string()
-        .min(30, "The description must have at least 30 characters"),
+        .min(30, "The description must have at least 30 characters."),
     price: z.number()
         .min(1),
     texture: z.string()
